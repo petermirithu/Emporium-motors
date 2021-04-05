@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Motors</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.jpg" type="image" sizes="16x16"> 
+</head>
+
+<body class="contact">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo" width="40px" style="border-radius: 100%;">
+                Emporium Motors
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>                    
+                    <li><a href="./contact_us.html">Contact us</a></li>
+                    <li>
+                        <div type="button" data-toggle="modal" data-target="#cart">Cart <span class=" badge badge-danger total-count"></span></div>
+                    </li>      
+                    <li>
+                        <a href="./design_summary.html">Design Summary</a>
+                    </li>                                                   
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>Contact us</h1>
+        </div>
+    </header>
+    <div class="container">
+        <br><br>
+        <h3>In need of something?</h3>
+        <i>Do you have any questions? Please do not hesitate to contact us directly. Our team will
+            come back to you within
+            a matter of hours to help you.</i>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-9">
+                <form id="contact-form" name="contact-form" action="" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <label for="name" class="name">Your name</label>
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="text" id="email" name="email" class="form-control" required>
+                            <label for="email" class="email">Your email</label>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                            <label for="subject" class="subject">Subject</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <textarea type="text" id="message" name="message" rows="2"
+                                class="form-control md-textarea" required></textarea>
+                            <label for="message" class="message">Your message</label>
+
+                        </div>
+                    </div>
+                    <button class="button submit" type="submit">Submit</button>
+                </form>
+                <div class="status"></div>
+            </div>
+
+            <div class="col-md-3">
+                <ul>
+                    <li>
+                        <p>Nairobi,00200, Kenya</p>
+                    </li>
+
+                    <li>
+                        <p>+254 790 476 167</p>
+                    </li>
+
+                    <li>
+                        <p>contact_us@emporium.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">                
+
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Product</div>
+                            </th>                            
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Price</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="text-uppercase">Quantity</div>
+                            </th>                                  
+                            <th scope="col" class="border-0 bg-light">
+
+                            </th>
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Total</div>
+                            </th>                                                          
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart">
+                                                        
+                    </tbody>
+                </table>   
+
+              <div><b>Total price: ksh <span class="total-cart"></span></b></div>
+            </div>
+            <div class="modal-footer">            
+              <div type="button close" class="button" data-dismiss="modal">Close</div>
+              <a href="./order_summary.html" type="button" class="button order">Order now</a>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <br><br>
+    <footer class="text-center">        
+        <div class="container">                    
+            <a class="link"  href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb.png" alt="">  
+            </a>                  
+            <a class="link" href="https://twitter.com" target="_blank">
+              <img src="./images/twitter.png" alt="">
+            </a>                        
+            <a class="link" href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>                  
+            <a class="link" href="https://ke.linkedin.com" target="_blank">
+                <img src="./images/linkedin.png" alt="">
+            </a>            
+            <a class="link" href="https://github.com" target="_blank">
+                <img src="./images/github.png" alt="">
+            </a>                   
+        </div>                    
+        <div class="text-center copyright">
+          © 2020 Copyright: Emporium Motors
+        </div>        
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>

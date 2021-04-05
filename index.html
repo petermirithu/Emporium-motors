@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Motors</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">   
+    <link rel="stylesheet" href="./fonts/Quicksand-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./fonts/Pacifico-Regular.ttf">
+    <link rel="icon" href="./images/logo.jpg" type="image" sizes="16x16"> 
+</head>
+
+<body class="home">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo" width="40px" style="border-radius: 100%;">
+                Emporium Motors
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>                                        
+                    <li><a href="./contact_us.html">Contact us</a></li> 
+                    <li>
+                        <div type="button" data-toggle="modal" data-target="#cart">Cart <span class=" badge badge-danger total-count"></span></div>
+                    </li>    
+                    <li>
+                        <a href="./design_summary.html">Design Summary</a>
+                    </li>                                                           
+                </ul>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">                
+                <div class="carousel-item active"
+                    style="background-image: url('./images/ferari.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">Looking for car?</h3>
+                        <p class="lead">You just in the right place. We do provide powerful, agile and intelligent cars.</p>
+                    </div>
+                </div>                
+                <div class="carousel-item"
+                style="background-image: url('./images/bmw318.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">Start with something new</h3>
+                        <p class="lead">Get to buy from us to experience the best driving experience. We don't disappoint</p>
+                    </div>
+                </div>                
+                <div class="carousel-item"                    
+                    style="background-image: url('./images/audi.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">Lose your innocense in 3.9 seconds</h3>
+                        <p class="lead">The vehicles here are just mind blowing. Shop with us and get the best from us.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <br>
+        <br>        
+        <h2>Welcome to Emporium motors</h2>
+        <div class="row">
+            <div class="col-md-6">                
+                <p>Before we get ahead of ourselves, we want to welcome you to Emporium Motors. Where nothing can replace what we do since we do it for you.</p>
+                <p>We are specialist in: </p>
+                <ul>
+                    <li>Steering and Suspensions</li>
+                    <li>Mufflers and Exhaust Systems</li>
+                    <li>Brake Repair Specialists</li>
+                    <li>Fuel System Services</li>
+                    <li>Complete Safety Analysis</li>                    
+                    <li>Complete Computer Diagnostics</li>
+                    <li>Complete Engine Diagnostics</li>
+                </ul>
+                <a class="button more" href="./about_us.html">More about us</a>
+            </div>
+            <div class="col-md-6">
+                <img class="intro" src="./images/bmw3201.jpg" width="500px" alt="">
+            </div>
+
+        </div>     
+        <br>
+        <br>
+        <br>                
+        <h2>Latest Premium Cars</h2>
+        <div class="row cars">
+            <div class="col card car">
+                <img class="card-img-top" src="./images/mercAMG.jpg" alt="Car">                                
+                <a href="#" data-img="./images/mercAMG.jpg" data-name="Mercedes_Benz_AMG_CLA" data-price="10000000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 10M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2018</p>                    
+                    <h5 class="card-title">Mercedes-Benz AMG CLA</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">1000 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">12/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/bmw320.jpg" alt="Car">
+                <a href="#" data-img="./images/bmw320.jpg" data-name="BMW_3_series" data-price="12000000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 12M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2020</p>                    
+                    <h5 class="card-title">BMW 3 Series</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">10 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">14/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Manual</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/mustang.jpg" alt="Car">
+                <a href="#" data-img="./images/mustang.jpg" data-name="Ford_Mustang" data-price="8900000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 8.9M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2010</p>                    
+                    <h5 class="card-title">Ford Mustang</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">200 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">12/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Manual</span>
+                    </div>
+                </div>
+            </div>            
+        </div>    
+        <br>
+        <div style="width: 100%;text-align: center;">
+            <a href="./inventory.html" class="button more-cars">View more cars</a>            
+        </div>   
+        <br>
+        <br>
+        <br>             
+        <h2>Partnerships</h2>
+        <div class="row partners">
+            <div class="card col">
+                <img src="./images/bmw.jpg" alt="">                                
+            </div>
+            <div class="card col">
+                <img src="./images/merc.jpg" alt="">                
+            </div>
+            <div class="card col">
+                <img src="./images/volvoLogo.jpg" alt="">                
+            </div>
+            <div class="card col">
+                <img src="./images/toyota.jpg" alt="">                
+            </div>
+            <div class="card col">
+                <img src="./images/nisaan.jpg" alt="">                
+            </div>
+            <div class="card col">
+                <img src="./images/ford-logo.png" alt="">                            
+            </div>
+            <div class="card col">
+                <img src="./images/mistubishi.png" alt="">                
+            </div>                                                                        
+        </div>
+        <br>
+        <br>
+        <br>             
+    </div>
+    <div id="carouselReviews" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselReviews" data-slide-to="1"></li>
+            <li data-target="#carouselReviews" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" style="background-color: #e59500">                
+            <div class="carousel-item active">
+                <div class="review">
+                    <img src="./images/john.jpg" class="reviewer_pic" alt="">
+                    <p><b>John Legend</b></p>
+                    <small>Customer</small>
+                    <br>
+                    <p class="comment">"Awesome cars you have. The customer service is beyond helpful! They are  very patient and supportive to walk you through everything."</p>                    
+                </div>
+            </div>                
+            <div class="carousel-item">
+                <div class="review">
+                    <img src="./images/tommy.jpg" class="reviewer_pic" alt="">                    
+                    <p><b>Tommy Hilfiger</b></p>
+                    <small>Customer</small>
+                    <p class="comment">"Impressed! I have bought a couple of cars. The one i bought here ar by far the best. The services are well done and the support is 100%"</p>                    
+                </div>
+            </div>                
+            <div class="carousel-item">
+                <div class="review">
+                    <img src="./images/selina.webp" class="reviewer_pic" alt="">                    
+                    <p><b>Celestine Gachuhi</b></p>
+                    <small>Customer</small>
+                    <p class="comment">"I love the support you give. The payment process is easy and convinient"</p>                                        
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">                
+
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Product</div>
+                            </th>                            
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Price</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="text-uppercase">Quantity</div>
+                            </th>                                  
+                            <th scope="col" class="border-0 bg-light">
+
+                            </th>
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Total</div>
+                            </th>                                                          
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart">
+                                                        
+                    </tbody>
+                </table>   
+
+              <div><b>Total price: ksh <span class="total-cart"></span></b></div>
+            </div>
+            <div class="modal-footer">            
+              <div type="button close" class="button" data-dismiss="modal">Close</div>
+              <a href="./order_summary.html" type="button" class="button order">Order now</a>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <footer class="text-center">        
+        <div class="container">                    
+            <a class="link"  href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb.png" alt="">  
+            </a>                  
+            <a class="link" href="https://twitter.com" target="_blank">
+              <img src="./images/twitter.png" alt="">
+            </a>                        
+            <a class="link" href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>                  
+            <a class="link" href="https://ke.linkedin.com" target="_blank">
+                <img src="./images/linkedin.png" alt="">
+            </a>            
+            <a class="link" href="https://github.com" target="_blank">
+                <img src="./images/github.png" alt="">
+            </a>                   
+        </div>                    
+        <div class="text-center copyright">            
+          © 2020 Copyright: Emporium Motors
+        </div>        
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</html>

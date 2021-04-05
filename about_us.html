@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Motors</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.jpg" type="image" sizes="16x16"> 
+</head>
+<body class="about">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo" width="40px" style="border-radius: 100%;">
+                Emporium Motors
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>                                        
+                    <li><a href="./contact_us.html">Contact us</a></li>
+                    <li>
+                        <div type="button" data-toggle="modal" data-target="#cart">Cart <span class=" badge badge-danger total-count"></span></div>
+                    </li>  
+                    <li>
+                        <a href="./design_summary.html">Design Summary</a>
+                    </li>                                                       
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>About us</h1>
+        </div>
+    </header>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row intro">
+            <div class="col-md-6">
+                <img class="img1" src="./images/dashboard.jpg" alt="About us">
+            </div>
+            <div class="col-md-6">
+                <h3>WELCOME TO EMPORIUM MOTORS</h3>
+                <p>
+                    <i>
+                        <b>
+                            Before we get ahead of ourselves, we want to welcome you to Emporium Motors. Where nothing can replace what we do since we do it for you.
+                        </b>                    
+                    </i>
+                </p>
+                <p>
+                    We appreciate you taking the time today to visit our web site. Our goal is to give you an interactive tour of our new and used inventory, as well as allow you to conveniently get a quote, schedule a service appointment, or apply for financing. The search for a luxury car is filled with high expectations. Undoubtedly, that has a lot to do with the vehicles you are considering, but at Emporium motors, we think you should also have pretty high expectations for your dealership.
+                </p>
+            </div>
+        </div>        
+
+        <br>
+        <br>
+        <div class="row values">
+            <div class="col-md-6">                
+                <h3>Core Values</h3>
+                <i>We go through extensive factory training so that we may provide you with the knowledge you need to make an educated decision in choosing the vehicle that is right for your lifestyle.</i>
+
+                <p>We are specialist in: </p>
+                <ul>
+                    <li>Steering and Suspensions</li>
+                    <li>Mufflers and Exhaust Systems</li>
+                    <li>Brake Repair Specialists</li>
+                    <li>Fuel System Services</li>
+                    <li>Complete Safety Analysis</li>                    
+                    <li>Complete Computer Diagnostics</li>
+                    <li>Complete Engine Diagnostics</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img class="img2" src="./images/royce.jpg" alt="Our values">
+            </div>
+        </div>
+
+        <br><br>
+        <div class="team">
+            <h3>Our Team</h3>
+            <br>
+            <div class="row">
+                <div class="col card">
+                    <img class="img1" src="./images/ceo.png" alt="Chief Executive Officer">
+                    <p>Peter Mirithu</p>
+                    <small>Chief Executive Officer</small>
+                </div>
+                <div class="col card">
+                    <img class="img2" src="./images/coo.jpg" alt="President of Finance">
+                    <p>Mary Wambui</p>
+                    <small>President of Finance</small>
+                </div>
+                <div class="col card">
+                    <img class="img3" src="./images/cfo.webp" alt="Sales Manager">
+                    <p>Mike Joseph</p>
+                    <small>Sales Manager</small>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">                
+
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Product</div>
+                            </th>                            
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Price</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="text-uppercase">Quantity</div>
+                            </th>                                  
+                            <th scope="col" class="border-0 bg-light">
+
+                            </th>
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Total</div>
+                            </th>                                                          
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart">
+                                                        
+                    </tbody>
+                </table>   
+
+              <div><b>Total price: ksh <span class="total-cart"></span></b></div>
+            </div>
+            <div class="modal-footer">            
+              <div type="button close" class="button" data-dismiss="modal">Close</div>
+              <a href="./order_summary.html" type="button" class="button order">Order now</a>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <footer class="text-center">        
+        <div class="container">                    
+            <a class="link"  href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb.png" alt="">  
+            </a>                  
+            <a class="link" href="https://twitter.com" target="_blank">
+              <img src="./images/twitter.png" alt="">
+            </a>                        
+            <a class="link" href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>                  
+            <a class="link" href="https://ke.linkedin.com" target="_blank">
+                <img src="./images/linkedin.png" alt="">
+            </a>            
+            <a class="link" href="https://github.com" target="_blank">
+                <img src="./images/github.png" alt="">
+            </a>                   
+        </div>                    
+        <div class="text-center copyright">
+          © 2020 Copyright: Emporium Motors
+        </div>        
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Rite</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.jpg" type="image" sizes="16x16"> 
+</head>
+<body class="inventory">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo" width="40px" style="border-radius: 100%;">
+                Emporium Motors
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>                                        
+                    <li><a href="./contact_us.html">Contact us</a></li>
+                    <li>
+                        <div type="button" data-toggle="modal" data-target="#cart">Cart <span class=" badge badge-danger total-count"></span></div>
+                    </li>    
+                    <li>
+                        <a href="./design_summary.html">Design Summary</a>
+                    </li>                                                     
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>Inventory</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <br><br>
+        <h3>Available cars for sale</h3>
+        <div class="row cars">
+            <div class="col card car">
+                <img class="card-img-top" src="./images/mercAMG.jpg" alt="Car">
+                <a href="#" data-img="./images/mercAMG.jpg" data-name="Mercedes_Benz_AMG_CLA" data-price="10000000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 10M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2018</p>                    
+                    <h5 class="card-title">Mercedes-Benz AMG CLA</h5>                    
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">1000 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">12/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/bmw320.jpg" alt="Car">
+                <a href="#" data-img="./images/bmw320.jpg" data-name="BMW_3_series" data-price="12000000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 12M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2020</p>                    
+                    <h5 class="card-title">BMW 3 Series</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">10 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">14/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Manual</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/mustang.jpg" alt="Car">
+                <a href="#" data-img="./images/mustang.jpg" data-name="Ford_Mustang" data-price="8900000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 8.9M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2010</p>                    
+                    <h5 class="card-title">Ford Mustang</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">200 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">12/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Manual</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cars">
+            <div class="col card car">
+                <img class="card-img-top" src="./images/volvoL.jpg" alt="Car">
+                <a href="#" data-img="./images/volvoL.jpg" data-name="Volvo_C60" data-price="8000000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 8M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2016</p>                    
+                    <h5 class="card-title">Volvo C60</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">100 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">8/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/nissanGT.jpg" alt="Car">
+                <a href="#" data-img="./images/nissanGT.jpg" data-name="Nissan_GT" data-price="4800000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 4.8M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2009</p>                    
+                    <h5 class="card-title">Nissan GT</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">1000 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">12/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>
+                </div>
+            </div>            
+            <div class="col card car">
+                <img class="card-img-top" src="./images/mistubishi_lancer.jpg" alt="Car">
+                <a href="#" data-img="./images/mistubishi_lancer.jpg" data-name="Mistubishi_lancer" data-price="1200000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 1.2M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2012</p>                    
+                    <h5 class="card-title">Mistubishi lancer</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">100000 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">6/8</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cars">
+            <div class="col card car">
+                <img class="card-img-top" src="./images/toyota_sport.jpg" alt="Car">
+                <a href="#" data-img="./images/toyota_sport.jpg" data-name="Toyota_sports_car" data-price="1500000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 1.5M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2019</p>                    
+                    <h5 class="card-title">Toyota sports car</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">100 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">12/14</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/subaru.jpg" alt="Car">
+                <a href="#" data-img="./images/subaru.jpg" data-name="Subaru_impreza" data-price="3100000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 3.1M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2015</p>                    
+                    <h5 class="card-title">Subaru impreza</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">20-0 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">6/10</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Manual</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card car">
+                <img class="card-img-top" src="./images/lexus.jpg" alt="Car">
+                <a href="#" data-img="./images/lexus.jpg" data-name="Lexus" data-price="8900000" class="add-to-cart">Add to cart</a>
+                <div class="card-body">
+                    <div class="price">
+                        ksh 5M
+                    </div>
+                    <p style="padding-bottom: 5px;">NEW 2020</p>                    
+                    <h5 class="card-title">Lexus</h5>
+                    <div class="info card-text">
+                        <img src="./images/road.jpg" alt="Road icon" width="20px"> 
+                        <span class="text-muted">1500 miles</span> 
+                        <img src="./images/fuel.png" alt="Fuel icon" width="20px">
+                        <span class="text-muted">8/12</span> 
+                        <img src="./images/gear.png" alt="Gear icon" width="20px">
+                        <span class="text-muted">Automatic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">                
+
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Product</div>
+                            </th>                            
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Price</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="text-uppercase">Quantity</div>
+                            </th>                                  
+                            <th scope="col" class="border-0 bg-light">
+
+                            </th>
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Total</div>
+                            </th>                                                          
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart">
+                                                        
+                    </tbody>
+                </table>   
+
+              <div><b>Total price: ksh <span class="total-cart"></span></b></div>
+            </div>
+            <div class="modal-footer">            
+              <div type="button close" class="button" data-dismiss="modal">Close</div>
+              <a href="./order_summary.html" type="button" class="button order">Order now</a>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <br><br>
+    <footer class="text-center">        
+        <div class="container">                    
+            <a class="link"  href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb.png" alt="">  
+            </a>                  
+            <a class="link" href="https://twitter.com" target="_blank">
+              <img src="./images/twitter.png" alt="">
+            </a>                        
+            <a class="link" href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>                  
+            <a class="link" href="https://ke.linkedin.com" target="_blank">
+                <img src="./images/linkedin.png" alt="">
+            </a>            
+            <a class="link" href="https://github.com" target="_blank">
+                <img src="./images/github.png" alt="">
+            </a>                   
+        </div>                    
+        <div class="text-center copyright">
+          © 2020 Copyright: Emporium Motors
+        </div>        
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</html>

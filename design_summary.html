@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Rite</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.jpg" type="image" sizes="16x16"> 
+</head>
+
+<body class="design-summary">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo" width="40px" style="border-radius: 100%;">
+                Emporium Motors
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>
+                    <li><a href="./contact_us.html">Contact us</a></li>
+                    <li>
+                        <div type="button" data-toggle="modal" data-target="#cart">Cart <span class=" badge badge-danger total-count"></span></div>
+                    </li>     
+                    <li>
+                        <a href="./design_summary.html">Design Summary</a>
+                    </li>                                                    
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>Design Summary</h1>
+        </div>
+    </header>
+    <div class="container">
+        <br><br>
+        <h3>Why this design?</h3>
+        <p>Since I love cars, I decided to make a website that involves selling cars.
+            My audience are any people interested in buying cars from all walks of life.</p>
+        <p>I chose to use a carousel on the home page in order to attract clearly give users info about the website. I maintained the same architecture across all pages but with pictures instead for consistency.</p>
+        <p>For my choice of color theme, I based it on the pictures I used to make the website.</p>            
+
+        <h3>Deployed link</h3>            
+        <p>I used github to host my static web page. Below is the link to my deployed site: </p>
+        <a href="" target="_blank">...</a>
+
+
+        <h3>Site map</h3>   
+        <div class="row">
+            <div class="col">
+                <img src="./images/site_map.PNG" alt="site map" width="600px">            
+                <p>I used Gloo maps website to draw my site map. It clearly shows the various pages and how they are connected.</p>
+            </div>
+            <div class="col">
+                <h5 class="text-center">Tools used</h5>   
+                <ul>
+                    <li>
+                        <b>Html 5</b>
+                        <p>I used html 5 to used to structure the various web pages and their content.</p>
+                    </li>
+                    <li>
+                        <b>CSS</b>
+                        <p>I used to css to style up the page inorder to make them more attractive and styling.</p>
+                    </li>
+                    <li>
+                        <b>Javascript and Jquery</b>
+                        <p>I used this two combined to help me enable users add items to cart and calculate their final cost. I also used them to style the navbar when the user scrolls the page.</p>
+                    </li>
+                    <li>
+                        <b>Bootstrap</b>
+                        <p>I used to bootstrap to help me style up the site</p>
+                    </li>
+                    <li>
+                        <b>Custom fonts</b>
+                        <p>I downloaded some custom fonts from google fonts website and used them in the application to make improve the site's aesthetics.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>                 
+
+        <br>
+        <h3>Wireframes</h3>
+        <p>For the Wireframes I used figma to draw the different page layouts.</p>
+        <div class="row layouts">
+            <div class="col">
+                <p>Home page layout.</p>
+                <img src="./images/home_pg.PNG" width="500px">
+            </div>
+            <div class="col">
+                <p>About us page layout.</p>
+                <img src="./images/about_pg.PNG" width="500px">
+            </div>
+        </div>
+        <div class="row layouts">
+            <div class="col">
+                <p>Contact us page layout.</p>
+                <img src="./images/contact_pg.PNG" width="500px">
+            </div>
+            <div class="col">
+                <p>Inventory page layout.</p>
+                <img src="./images/inventory_pg.PNG" width="500px">
+            </div>
+        </div>
+        <br>
+        <div class="row layouts" style="justify-content: center;">                    
+            <div>
+                <p>Order summary page layout.</p>
+                <img src="./images/order_sm_pg.PNG" width="500px">            
+            </div>
+        </div>
+        <br>
+        <h3>Features of the site</h3>
+        <ul>                     
+            <li>
+                <b>Ability to view all products in the system</b>
+                <p>The site makes it easy for users to view the different types of vehicles in the system. This was achieved by showing 3 vehicles on the home page then providing the users with a 
+                    button to take them to the inventory page where they can see all cars and easily add them to cart.</p>
+            </li>
+            <li>
+                <b>Cart system</b>
+                <p>The site has the ability to enable users to add different cars of different counts in their cart just like in supermarkets. This feature was achieved using jquery and javascript and also using the local storage on the browser to keep the data persistent even after page is reloaded.</p>
+                <p>To add and item to cart, just hover on the image of the vehicle that caught your eye and you will see an <span style="font-style: italic;color: #840032;">Add to cart</span> button. Click it and it will add that item to cart.</p>
+            </li>
+            <li>
+                <b>Ability to see order summary</b>
+                <p>I added an order summary page to enables users to view a detailed report of the cost they would incur for transparency. The page also shows a summary of the items in the cart.</p>
+            </li>
+            <li>                
+                <b>Ability to view all reviews</b>
+                <p>The site gives users a chance to see all reviews made about the site inorder to help know the value of the business. The feature was achived by using the bootstrap carousel feature and a little bit of css to spice up the design.</p>
+            </li>
+            <li>
+                <b>Navbar feature</b>
+                <p>For ease of use of the website, I added the navbar to help users quickly get to where they want to go within the site.</p>
+            </li>               
+            <li>
+                <b>About us page</b>
+                <p>For information purpose, the about us page was added to help users know more about the site.</p>
+            </li>            
+            <li>
+                <b>Contact us page</b>
+                <p>Though not fully done, this page is meant to help users send an email to me incase they have any inquires</p>
+            </li>            
+        </ul>                      
+
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">                
+
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Product</div>
+                            </th>                            
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Price</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="text-uppercase">Quantity</div>
+                            </th>                                  
+                            <th scope="col" class="border-0 bg-light">
+
+                            </th>
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Total</div>
+                            </th>                                                          
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart">
+                                                        
+                    </tbody>
+                </table>   
+
+              <div><b>Total price: ksh <span class="total-cart"></span></b></div>
+            </div>
+            <div class="modal-footer">            
+              <div type="button close" class="button" data-dismiss="modal">Close</div>
+              <a href="./order_summary.html" type="button" class="button order">Order now</a>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <footer class="text-center">
+        <div class="container">
+            <a class="link" href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb.png" alt="">
+            </a>
+            <a class="link" href="https://twitter.com" target="_blank">
+                <img src="./images/twitter.png" alt="">
+            </a>
+            <a class="link" href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>
+            <a class="link" href="https://ke.linkedin.com" target="_blank">
+                <img src="./images/linkedin.png" alt="">
+            </a>
+            <a class="link" href="https://github.com" target="_blank">
+                <img src="./images/github.png" alt="">
+            </a>
+        </div>
+        <div class="text-center copyright">
+            © 2020 Copyright: Emporium Motors
+        </div>
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</html>

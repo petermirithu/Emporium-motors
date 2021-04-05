@@ -1,0 +1,374 @@
+/* Body Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #e5dada;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Pacifico', cursive;
+}
+
+/* Navbar styles */
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #e59500;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    top: 0px;
+    z-index: 9999;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #e59500;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 20px;    
+    cursor: pointer;
+}
+
+nav ul li a {    
+    color: #e59500;
+    font-size: 16px;
+    text-decoration: none !important
+}
+.display-4{
+    font-size: 30px;        
+}
+
+.button{        
+    text-align: center;        
+    width: 200px;
+    padding: 12px 48px;            
+    border: solid 2px #840032 !important;       
+    color: #000;
+    text-decoration: none !important;
+}
+.button:hover{
+    background: #840032 !important;
+    color: white;
+    text-decoration: none !important;
+}
+
+/* home page styles */
+.home h2{
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    color: #02040f;
+}
+
+.home .intro{
+    border-radius: 20px;
+}
+
+.car{
+    border-radius: 4px;
+    background: #fff;        
+}
+.car .info{
+    display: inline-block;
+}
+
+.car .price{
+    float: right !important;
+    padding: 10px;
+    background: #e59500;    
+    font-weight: bold;
+    font-size: 12px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+.car .info .text-muted{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.car .card-img-top{    
+    height: 250px;
+    transition: transform .7s;     
+    border-radius: 10px;
+}
+
+.car .card-img-top:hover {
+    transform: scale(1.1);
+}
+.car p{
+    font-size: 12px;
+    font-style: italic;
+}
+.car h5{
+    font-size: 18px;
+}
+
+.cars .card{    
+    margin: 5px;
+    padding-top: 10px;
+    width: 100px !important;
+}    
+.car .add-to-cart {
+    position: absolute;    
+    left: 23%;
+    top: 30%;
+    text-align: center;    
+    transition: opacity .35s ease;
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 99;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.car:hover .add-to-cart{
+    opacity: 1;
+}
+  
+.home .partners img{
+    display: inline-block;        
+    height: 100px;
+    min-width: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: transform .7s; 
+    margin-top: 20px;
+}
+
+.home .partners img:hover {
+    transform: scale(1.1);
+}
+.home .partners .card{
+    text-align: center;    
+    height: 150px;
+    margin: 5px;
+}
+.review{
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+.review .comment{
+    font-style: italic;
+}
+.reviewer_pic{
+    width: 100px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.comment{
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+}
+/* About us page */
+.about .header{
+    height: 65vh;
+    background:url('../images/lambo.jpg');    
+    background-position: center;
+    background-size: cover;
+}
+.about .title{
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+.about h3{
+    border-bottom: 1px solid black;    
+    color: #02040f;
+}
+
+.about .intro .img1{
+    width: 500px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.about .values h3{
+    border-bottom: 1px solid black;    
+}
+.about .values .img2{
+    width: 550px;
+    border-radius: 20px;
+    padding-top: 10px;      
+}
+
+.about .team .img1,.about .team .img2,.about .team .img3{
+    width: 100%;
+    height: 310px;
+    border-radius: 20px;
+}
+.about .team .card{
+    margin: 5px;
+    padding:20px;    
+}
+.about .team .card p{
+    font-weight: bolder;
+}
+.about .team .card small{
+    font-style: italic;
+}
+/* Contact us page */
+.contact .header{
+    height: 65vh;
+    background:url('../images/mustang2.jpg');    
+    background-position: center;
+    background-size: cover;
+}
+.contact .title{
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+.contact h3{
+    border-bottom: 1px solid black;    
+}
+.contact .name, .contact .email, .contact .subject, .contact  .message{
+    font-weight: bold !important;
+}
+.contact .submit{
+    background: none;
+}
+
+/* Inventory */
+.inventory .header{
+    height: 65vh;
+    background:url('../images/inventory.jpg');    
+    background-position: center;
+    background-size: cover;
+}
+.inventory .title{
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+.inventory h3{
+    border-bottom: 1px solid black;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    padding:20px;
+    color: white;
+}
+footer .copyright{
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 15px;
+}
+footer .link{
+    text-decoration: none !important;
+}
+footer img{
+    width:40px;    
+}
+
+/* Order summary page */
+.order-summary .header{
+    height: 65vh;
+    background:url('../images/order.jpg');    
+    background-position: center;
+    background-size: cover;
+}
+.order-summary .title{
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+.order-summary footer{
+    margin-top: 150px;        
+} 
+.order-summary .pay{
+    width: 100%;
+    display: block;
+}
+
+/* cart */
+.modal-content{
+    background: #e5dada;
+}
+.plus-item,.minus-item,.delete-item{    
+    font-weight: bold !important;    
+    font-size: 25px;
+    background-color: gray;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    clip-path: circle(50% at 50% 50%);
+    color: black;
+}
+.delete-item{
+    padding-top: 10px;
+    font-size: 20px;    
+}
+.item-count{
+    border-radius: 20px;
+    width: 40px !important;
+    border: none;    
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal-footer .button{
+    width: 180px !important;
+    cursor: pointer;
+}
+
+/* Design summary */
+.design-summary .header{
+    height: 65vh;
+    background:url('../images/design.jpg');    
+    background-position: center;
+    background-size: cover;
+}
+.design-summary .title{
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+.design-summary h3{
+    border-bottom: 1px solid black;
+}
+.design-summary .layouts{
+    font-weight: bold;
+}

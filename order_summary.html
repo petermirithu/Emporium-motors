@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Rite</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.jpg" type="image" sizes="16x16"> 
+</head>
+
+<body class="order-summary">
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo" width="40px" style="border-radius: 100%;">
+                Emporium Motors
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about_us.html">About us</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>
+                    <li><a href="./contact_us.html">Contact us</a></li>
+                    <li>
+                        <div type="button" data-toggle="modal" data-target="#cart">Cart <span class=" badge badge-danger total-count"></span></div>
+                    </li>     
+                    <li>
+                        <a href="./design_summary.html">Design Summary</a>
+                    </li>                                                    
+                </ul>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>Order Summary</h1>
+        </div>
+    </header>
+
+    <div class="container">  
+        <br><br>                  
+            <div class="row bg-white rounded shadow-sm">
+                <div class="col-lg-6">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2" class="border-0 bg-light">                                        
+                                        <div class="text-uppercase">Product</div>
+                                    </th>                                    
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="text-uppercase">Quantity</div>
+                                    </th>                                    
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="text-uppercase">Cost</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="ordered-items">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+                    <div class="p-4">
+                        <p class="font-italic">Shipping and additional costs are calculated based on values you
+                            have entered.</p>
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                    class="text-muted">Order Subtotal </strong><strong class="total-cart"></strong></li>
+                            <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                    class="text-muted">Shipping and handling</strong><strong>ksh 5000.00</strong></li>
+                            <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                    class="text-muted">Tax</strong><strong>ksh 0.00</strong></li>
+                            <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                    class="text-muted">Total</strong>
+                                <h5 class="font-weight-bold total-order"> </h5>
+                            </li>
+                        </ul><a href="#" class="button pay">Pay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Cart</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">                
+
+                <table class="table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Product</div>
+                            </th>                            
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Price</div>
+                            </th>
+                            <th scope="col" class="border-0 bg-light">
+                                <div class="text-uppercase">Quantity</div>
+                            </th>                                  
+                            <th scope="col" class="border-0 bg-light">
+
+                            </th>
+                            <th scope="col" class="border-0 bg-light">                                        
+                                <div class="text-uppercase">Total</div>
+                            </th>                                                          
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart">
+                                                        
+                    </tbody>
+                </table>   
+
+              <div><b>Total price: ksh <span class="total-cart"></span></b></div>
+            </div>
+            <div class="modal-footer">            
+              <div type="button close" class="button" data-dismiss="modal">Close</div>
+              <a href="./order_summary.html" type="button" class="button order">Order now</a>
+            </div>
+          </div>
+        </div>
+    </div> 
+
+    <footer class="text-center">
+        <div class="container">
+            <a class="link" href="https://www.facebook.com" target="_blank">
+                <img src="./images/fb.png" alt="">
+            </a>
+            <a class="link" href="https://twitter.com" target="_blank">
+                <img src="./images/twitter.png" alt="">
+            </a>
+            <a class="link" href="https://www.instagram.com" target="_blank">
+                <img src="./images/insta.png" alt="">
+            </a>
+            <a class="link" href="https://ke.linkedin.com" target="_blank">
+                <img src="./images/linkedin.png" alt="">
+            </a>
+            <a class="link" href="https://github.com" target="_blank">
+                <img src="./images/github.png" alt="">
+            </a>
+        </div>
+        <div class="text-center copyright">
+            © 2020 Copyright: Emporium Motors
+        </div>
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
