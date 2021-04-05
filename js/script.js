@@ -122,7 +122,7 @@ $('.add-to-cart').click(function (event) {
       var price = Number($(this).data('price'));
       var img = $(this).data('img');
       shoppingCart.addItemToCart(name, price, 1, img);
-      alert("Successfully added item "+name+" to cart")
+      alert("Successfully added "+name+" to cart")
       displayCart();
 });
 
@@ -225,8 +225,8 @@ $('.submit').on("click", function (event){
 
 $('.pay').on('click', function (event){
       event.preventDefault()
+      alert("Successfully made a purchase. We shall get back to you soon")
       shoppingCart.clearCart();
       displayCart();            
-      // window.location.href = ;
-      alert("Successfully made a purchase. We shall get back to you soon")
+      window.location.href = "https://petermirithu.github.io/Emporium-motors";
 })
