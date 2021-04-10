@@ -122,7 +122,7 @@ $('.add-to-cart').click(function (event) {
       var price = Number($(this).data('price'));
       var img = $(this).data('img');
       shoppingCart.addItemToCart(name, price, 1, img);
-      alert("Successfully added "+name+" to cart")
+      alert("Successfully added item "+name+" to cart")
       displayCart();
 });
 
