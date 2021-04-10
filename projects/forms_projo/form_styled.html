@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetionnaire</title>
+</head>
+<style>
+.logo{
+    width: 200px;
+    text-align: center;
+}
+.head{
+    border-bottom: 1px solid black;
+    text-align: center;
+    color: #fca311;    
+}
+.form{    
+    width: 600px;        
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    color: #14213d;   
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+input[name="name"],input[name="address"],textarea{
+    width: 80%;
+    margin: 10px;
+}
+label{
+    font-weight: bold;
+}
+*{
+    font-family: cursive;
+}
+.btn-submit{
+    border-radius: 10px;
+    background-color: #55a630;
+    color: white;
+    border:none;    
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn-clear{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:#CC2936;
+    color: white;
+    border:none;    
+    cursor: pointer;
+}
+
+</style>
+<body style="background-color: #f8edeb;">
+    <img class="logo" src="usiu-logo.png" alt="Usiu Logo">
+    
+    <div style="text-align: center;">        
+        <form action="mailto:afundi@usiu.ac.ke" method="POST" class="form">
+
+            <h1 class="head">Quetionnaire</h1>
+            <p><i>Please provide the information required below: </i></p>
+    
+            <label for="name">Name:</label>        
+            <input type="text" name="name" autocomplete="off">
+            <br>
+            <br>
+    
+            <label for="address">Address:</label>        
+            <input type="text" name="address" autocomplete="off">
+            <br>
+            <br>
+    
+            <label for="sex">Sex:</label>        
+            <br>
+            <input type="radio" name="sex" value="male">Male 
+            <br>
+            <input type="radio" name="sex" value="female">Female
+            <br>
+            <br>
+    
+            <label for="courses">Course:</label>        
+            <select name="courses" id="courses">
+                <option value="Business Administration">Business Administration</option>
+                <option value="Internation Business Admin">Internation Business Admin</option>
+                <option value="Internation Relations">Internation Relations</option>
+                <option value="MOD">MOD</option>
+                <option value="IST">IST</option>
+            </select>
+            <br>
+            <br>
+    
+            <label for="">Favourite country for further studies:</label>
+            <br>
+            <input type="checkbox" name="DRC">DRC<br>
+            <input type="checkbox" name="Kenya">Kenya<br>
+            <input type="checkbox" name="Australia">Australia<br>
+            <input type="checkbox" name="Senegal">Senegal
+            <br>
+            <br>
+    
+            <label for="advice">Advice to potential/aspiring usiu students:</label>
+            <br>
+            <textarea autocomplete="off" name="advice" id="advice" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+        
+            <button class="btn-submit" type="submit">Submit</button>
+            <button class="btn-clear" type="reset">Clear</button>
+            <p style="border-bottom: 1px solid black;"></p>
+            <h2 align=center>Thank You</h2>            
+        </form>
+    </div>
+</body>
+</html>
